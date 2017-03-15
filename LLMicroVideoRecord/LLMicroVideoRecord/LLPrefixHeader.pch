@@ -1,0 +1,30 @@
+//
+//  LLPrefixHeader.pch
+//  LLMicroVideoRecord
+//
+//  Created by lbq on 2017/3/15.
+//  Copyright © 2017年 lbq. All rights reserved.
+//
+
+#ifndef LLPrefixHeader_pch
+#define LLPrefixHeader_pch
+
+#ifdef __OBJC__
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+
+#define MAS_SHORTHAND_GLOBALS
+#import <Masonry/Masonry.h>
+#import <ReactiveCocoa/ReactiveCocoa.h>
+#import "AppDelegate.h"
+
+#import "Category.h"
+
+#define WEAKSELF(weakSelf)  __weak __typeof(&*self)weakSelf = self;
+
+#endif
+
+
+#endif /* LLPrefixHeader_pch */

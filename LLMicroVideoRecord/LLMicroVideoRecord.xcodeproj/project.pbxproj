@@ -1,0 +1,475 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2A04D0C06EC637D4E71680A4 /* libPods-LLMicroVideoRecord.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48FA2D3768A4BA89AA180A4F /* libPods-LLMicroVideoRecord.a */; };
+		6B928E2B1E78DC7400A1D2D2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B928E2A1E78DC7400A1D2D2 /* main.m */; };
+		6B928E2E1E78DC7400A1D2D2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B928E2D1E78DC7400A1D2D2 /* AppDelegate.m */; };
+		6B928E311E78DC7400A1D2D2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B928E301E78DC7400A1D2D2 /* ViewController.m */; };
+		6B928E341E78DC7400A1D2D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B928E321E78DC7400A1D2D2 /* Main.storyboard */; };
+		6B928E361E78DC7400A1D2D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B928E351E78DC7400A1D2D2 /* Assets.xcassets */; };
+		6B928E391E78DC7400A1D2D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B928E371E78DC7400A1D2D2 /* LaunchScreen.storyboard */; };
+		6B928E501E78DEBE00A1D2D2 /* LLAnimationRecordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B928E4F1E78DEBE00A1D2D2 /* LLAnimationRecordView.m */; };
+		6B928E531E78DF8200A1D2D2 /* LLPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B928E521E78DF8200A1D2D2 /* LLPlayerView.m */; };
+		6B928E561E78E02800A1D2D2 /* LLMicroVideoConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B928E551E78E02800A1D2D2 /* LLMicroVideoConfig.m */; };
+		6B928E581E78E08500A1D2D2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B928E571E78E08500A1D2D2 /* Foundation.framework */; };
+		6B928E5A1E78E0A900A1D2D2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B928E591E78E0A900A1D2D2 /* UIKit.framework */; };
+		6B928E5F1E78E27000A1D2D2 /* UIColor+LL.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B928E5E1E78E27000A1D2D2 /* UIColor+LL.m */; };
+		6B928E631E78E39500A1D2D2 /* NSString+LL.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B928E621E78E39500A1D2D2 /* NSString+LL.m */; };
+		6B928E661E78E43000A1D2D2 /* LLMicroVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B928E651E78E43000A1D2D2 /* LLMicroVideoViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		474F4C54D9A087F140DD0DDE /* Pods-LLMicroVideoRecord.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLMicroVideoRecord.release.xcconfig"; path = "Pods/Target Support Files/Pods-LLMicroVideoRecord/Pods-LLMicroVideoRecord.release.xcconfig"; sourceTree = "<group>"; };
+		48FA2D3768A4BA89AA180A4F /* libPods-LLMicroVideoRecord.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LLMicroVideoRecord.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B928E261E78DC7400A1D2D2 /* LLMicroVideoRecord.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LLMicroVideoRecord.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B928E2A1E78DC7400A1D2D2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6B928E2C1E78DC7400A1D2D2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6B928E2D1E78DC7400A1D2D2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6B928E2F1E78DC7400A1D2D2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6B928E301E78DC7400A1D2D2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6B928E331E78DC7400A1D2D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6B928E351E78DC7400A1D2D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6B928E381E78DC7400A1D2D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6B928E3A1E78DC7400A1D2D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B928E4E1E78DEBE00A1D2D2 /* LLAnimationRecordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLAnimationRecordView.h; sourceTree = "<group>"; };
+		6B928E4F1E78DEBE00A1D2D2 /* LLAnimationRecordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLAnimationRecordView.m; sourceTree = "<group>"; };
+		6B928E511E78DF8200A1D2D2 /* LLPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLPlayerView.h; sourceTree = "<group>"; };
+		6B928E521E78DF8200A1D2D2 /* LLPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLPlayerView.m; sourceTree = "<group>"; };
+		6B928E541E78E02800A1D2D2 /* LLMicroVideoConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLMicroVideoConfig.h; sourceTree = "<group>"; };
+		6B928E551E78E02800A1D2D2 /* LLMicroVideoConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLMicroVideoConfig.m; sourceTree = "<group>"; };
+		6B928E571E78E08500A1D2D2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6B928E591E78E0A900A1D2D2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6B928E5B1E78E11C00A1D2D2 /* LLPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLPrefixHeader.pch; sourceTree = "<group>"; };
+		6B928E5D1E78E27000A1D2D2 /* UIColor+LL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+LL.h"; sourceTree = "<group>"; };
+		6B928E5E1E78E27000A1D2D2 /* UIColor+LL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+LL.m"; sourceTree = "<group>"; };
+		6B928E601E78E2EB00A1D2D2 /* Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Category.h; sourceTree = "<group>"; };
+		6B928E611E78E39500A1D2D2 /* NSString+LL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+LL.h"; sourceTree = "<group>"; };
+		6B928E621E78E39500A1D2D2 /* NSString+LL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+LL.m"; sourceTree = "<group>"; };
+		6B928E641E78E43000A1D2D2 /* LLMicroVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLMicroVideoViewController.h; sourceTree = "<group>"; };
+		6B928E651E78E43000A1D2D2 /* LLMicroVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLMicroVideoViewController.m; sourceTree = "<group>"; };
+		BE47C31DD56D2E390E4DB308 /* Pods-LLMicroVideoRecord.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLMicroVideoRecord.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LLMicroVideoRecord/Pods-LLMicroVideoRecord.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6B928E231E78DC7400A1D2D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B928E5A1E78E0A900A1D2D2 /* UIKit.framework in Frameworks */,
+				6B928E581E78E08500A1D2D2 /* Foundation.framework in Frameworks */,
+				2A04D0C06EC637D4E71680A4 /* libPods-LLMicroVideoRecord.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2B6D89A11AA51805F8D50DD1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BE47C31DD56D2E390E4DB308 /* Pods-LLMicroVideoRecord.debug.xcconfig */,
+				474F4C54D9A087F140DD0DDE /* Pods-LLMicroVideoRecord.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6B928E1D1E78DC7400A1D2D2 = {
+			isa = PBXGroup;
+			children = (
+				6B928E281E78DC7400A1D2D2 /* LLMicroVideoRecord */,
+				6B928E271E78DC7400A1D2D2 /* Products */,
+				2B6D89A11AA51805F8D50DD1 /* Pods */,
+				FB7BFF960257105DD3B80F82 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6B928E271E78DC7400A1D2D2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6B928E261E78DC7400A1D2D2 /* LLMicroVideoRecord.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6B928E281E78DC7400A1D2D2 /* LLMicroVideoRecord */ = {
+			isa = PBXGroup;
+			children = (
+				6B928E401E78DE2F00A1D2D2 /* LLMicroVideoRecord */,
+				6B928E2C1E78DC7400A1D2D2 /* AppDelegate.h */,
+				6B928E2D1E78DC7400A1D2D2 /* AppDelegate.m */,
+				6B928E2F1E78DC7400A1D2D2 /* ViewController.h */,
+				6B928E301E78DC7400A1D2D2 /* ViewController.m */,
+				6B928E321E78DC7400A1D2D2 /* Main.storyboard */,
+				6B928E351E78DC7400A1D2D2 /* Assets.xcassets */,
+				6B928E371E78DC7400A1D2D2 /* LaunchScreen.storyboard */,
+				6B928E3A1E78DC7400A1D2D2 /* Info.plist */,
+				6B928E291E78DC7400A1D2D2 /* Supporting Files */,
+			);
+			path = LLMicroVideoRecord;
+			sourceTree = "<group>";
+		};
+		6B928E291E78DC7400A1D2D2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6B928E2A1E78DC7400A1D2D2 /* main.m */,
+				6B928E5B1E78E11C00A1D2D2 /* LLPrefixHeader.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6B928E401E78DE2F00A1D2D2 /* LLMicroVideoRecord */ = {
+			isa = PBXGroup;
+			children = (
+				6B928E5C1E78E25A00A1D2D2 /* category */,
+				6B928E411E78DE8D00A1D2D2 /* view */,
+				6B928E641E78E43000A1D2D2 /* LLMicroVideoViewController.h */,
+				6B928E651E78E43000A1D2D2 /* LLMicroVideoViewController.m */,
+				6B928E541E78E02800A1D2D2 /* LLMicroVideoConfig.h */,
+				6B928E551E78E02800A1D2D2 /* LLMicroVideoConfig.m */,
+			);
+			path = LLMicroVideoRecord;
+			sourceTree = "<group>";
+		};
+		6B928E411E78DE8D00A1D2D2 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				6B928E511E78DF8200A1D2D2 /* LLPlayerView.h */,
+				6B928E521E78DF8200A1D2D2 /* LLPlayerView.m */,
+				6B928E4E1E78DEBE00A1D2D2 /* LLAnimationRecordView.h */,
+				6B928E4F1E78DEBE00A1D2D2 /* LLAnimationRecordView.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		6B928E5C1E78E25A00A1D2D2 /* category */ = {
+			isa = PBXGroup;
+			children = (
+				6B928E601E78E2EB00A1D2D2 /* Category.h */,
+				6B928E5D1E78E27000A1D2D2 /* UIColor+LL.h */,
+				6B928E5E1E78E27000A1D2D2 /* UIColor+LL.m */,
+				6B928E611E78E39500A1D2D2 /* NSString+LL.h */,
+				6B928E621E78E39500A1D2D2 /* NSString+LL.m */,
+			);
+			path = category;
+			sourceTree = "<group>";
+		};
+		FB7BFF960257105DD3B80F82 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6B928E591E78E0A900A1D2D2 /* UIKit.framework */,
+				6B928E571E78E08500A1D2D2 /* Foundation.framework */,
+				48FA2D3768A4BA89AA180A4F /* libPods-LLMicroVideoRecord.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6B928E251E78DC7400A1D2D2 /* LLMicroVideoRecord */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B928E3D1E78DC7400A1D2D2 /* Build configuration list for PBXNativeTarget "LLMicroVideoRecord" */;
+			buildPhases = (
+				686A27B9D14027B24EC58FF9 /* [CP] Check Pods Manifest.lock */,
+				6B928E221E78DC7400A1D2D2 /* Sources */,
+				6B928E231E78DC7400A1D2D2 /* Frameworks */,
+				6B928E241E78DC7400A1D2D2 /* Resources */,
+				27CB9C058990E1D1477A9ECD /* [CP] Embed Pods Frameworks */,
+				0116BDDD4675AEE572710F0D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LLMicroVideoRecord;
+			productName = LLMicroVideoRecord;
+			productReference = 6B928E261E78DC7400A1D2D2 /* LLMicroVideoRecord.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6B928E1E1E78DC7400A1D2D2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = lbq;
+				TargetAttributes = {
+					6B928E251E78DC7400A1D2D2 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = VX3477C4M7;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 6B928E211E78DC7400A1D2D2 /* Build configuration list for PBXProject "LLMicroVideoRecord" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6B928E1D1E78DC7400A1D2D2;
+			productRefGroup = 6B928E271E78DC7400A1D2D2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6B928E251E78DC7400A1D2D2 /* LLMicroVideoRecord */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6B928E241E78DC7400A1D2D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B928E391E78DC7400A1D2D2 /* LaunchScreen.storyboard in Resources */,
+				6B928E361E78DC7400A1D2D2 /* Assets.xcassets in Resources */,
+				6B928E341E78DC7400A1D2D2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0116BDDD4675AEE572710F0D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LLMicroVideoRecord/Pods-LLMicroVideoRecord-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		27CB9C058990E1D1477A9ECD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LLMicroVideoRecord/Pods-LLMicroVideoRecord-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		686A27B9D14027B24EC58FF9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6B928E221E78DC7400A1D2D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B928E5F1E78E27000A1D2D2 /* UIColor+LL.m in Sources */,
+				6B928E661E78E43000A1D2D2 /* LLMicroVideoViewController.m in Sources */,
+				6B928E531E78DF8200A1D2D2 /* LLPlayerView.m in Sources */,
+				6B928E311E78DC7400A1D2D2 /* ViewController.m in Sources */,
+				6B928E631E78E39500A1D2D2 /* NSString+LL.m in Sources */,
+				6B928E2E1E78DC7400A1D2D2 /* AppDelegate.m in Sources */,
+				6B928E501E78DEBE00A1D2D2 /* LLAnimationRecordView.m in Sources */,
+				6B928E2B1E78DC7400A1D2D2 /* main.m in Sources */,
+				6B928E561E78E02800A1D2D2 /* LLMicroVideoConfig.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6B928E321E78DC7400A1D2D2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B928E331E78DC7400A1D2D2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6B928E371E78DC7400A1D2D2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B928E381E78DC7400A1D2D2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6B928E3B1E78DC7400A1D2D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6B928E3C1E78DC7400A1D2D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6B928E3E1E78DC7400A1D2D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE47C31DD56D2E390E4DB308 /* Pods-LLMicroVideoRecord.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VX3477C4M7;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/LLMicroVideoRecord/LLPrefixHeader.pch";
+				INFOPLIST_FILE = LLMicroVideoRecord/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yiqi.ArtStudioRL;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6B928E3F1E78DC7400A1D2D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 474F4C54D9A087F140DD0DDE /* Pods-LLMicroVideoRecord.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VX3477C4M7;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/LLMicroVideoRecord/LLPrefixHeader.pch";
+				INFOPLIST_FILE = LLMicroVideoRecord/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yiqi.ArtStudioRL;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6B928E211E78DC7400A1D2D2 /* Build configuration list for PBXProject "LLMicroVideoRecord" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B928E3B1E78DC7400A1D2D2 /* Debug */,
+				6B928E3C1E78DC7400A1D2D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B928E3D1E78DC7400A1D2D2 /* Build configuration list for PBXNativeTarget "LLMicroVideoRecord" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B928E3E1E78DC7400A1D2D2 /* Debug */,
+				6B928E3F1E78DC7400A1D2D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6B928E1E1E78DC7400A1D2D2 /* Project object */;
+}
