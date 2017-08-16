@@ -124,10 +124,10 @@
 
 - (void)endAnimation
 {
-    self.startWidthConstraint.equalTo(100.);
-    self.startHeightConstraint.equalTo(100.);
-    self.readyWidthConstraint.equalTo(100.);
-    self.readyHeightConstraint.equalTo(100.);
+    self.startWidthConstraint.equalTo(76.);
+    self.startHeightConstraint.equalTo(76.);
+    self.readyWidthConstraint.equalTo(76.);
+    self.readyHeightConstraint.equalTo(76.);
     [self.arcLayer removeAnimationForKey:@"CircleAnimantion"];
     [self.arcLayer removeFromSuperlayer];
     [UIView animateWithDuration:0.2 animations:^{

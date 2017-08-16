@@ -98,9 +98,9 @@ AVCaptureAudioDataOutputSampleBufferDelegate>
     }];
     
     [self.recordBtnView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.width.height.equalTo(120.);
-        make.right.equalTo(self.view).offset(-30.);
-        make.centerY.equalTo(self.view);
+        make.width.height.equalTo(120);
+        make.bottom.equalTo(self.view).offset(-28.);
+        make.centerX.equalTo(self.view);
     }];
     
     [self.tipLabel mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -117,8 +117,9 @@ AVCaptureAudioDataOutputSampleBufferDelegate>
     }];
     
     [self.backBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.centerX.equalTo(self.recordBtnView);
-        make.bottom.equalTo(self.view).offset(-45.);
+        make.centerY.equalTo(self.recordBtnView);
+        make.bottom.equalTo(self.view).offset(-79.);
+        make.left.equalTo(58);
     }];
     
     WEAKSELF(weakSelf);
@@ -162,15 +163,15 @@ AVCaptureAudioDataOutputSampleBufferDelegate>
 - (void)remakeBtnLayout
 {
     [self.sendBtn mas_remakeConstraints:^(MASConstraintMaker *make) {
-        make.width.height.equalTo(70.);
-        make.centerY.equalTo(self.view).offset(35.+372./4.);
-        make.right.equalTo(self.view).offset(-50.);
+        make.width.height.equalTo(75.);
+        make.right.equalTo(self.view).offset(-37.);
+        make.bottom.equalTo(self.view).offset(-55.);
     }];
     
     [self.cancelBtn mas_remakeConstraints:^(MASConstraintMaker *make) {
-        make.width.height.equalTo(70.);
-        make.centerY.equalTo(self.view).offset(-(35.+372./4.));
-        make.right.equalTo(self.view).offset(-50.);
+        make.width.height.equalTo(75.);
+        make.left.equalTo(self.view).offset(37.);
+        make.bottom.equalTo(self.sendBtn);
     }];
     
     [UIView animateWithDuration:0.25 animations:^{
@@ -316,6 +317,10 @@ AVCaptureAudioDataOutputSampleBufferDelegate>
     if ([_videoSession canAddOutput:_videoDataOut]) {
         [_videoSession addOutput:_videoDataOut];
     }
+    //先于
+    AVCaptureConnection *captureConnection = [_videoDataOut connectionWithMediaType:AVMediaTypeVideo];
+    captureConnection.enabled = YES;
+    [captureConnection setVideoOrientation:AVCaptureVideoOrientationPortrait];
 }
 
 - (void)addAudioOutput
@@ -415,6 +420,11 @@ AVCaptureAudioDataOutputSampleBufferDelegate>
         CGFloat rotation = orientation == UIInterfaceOrientationLandscapeRight ? 0. : M_PI;
         _assetWriterVideoInput.transform = CGAffineTransformMakeRotation(rotation);
     }
+//    UIInterfaceOrientation orientation = [UIApplication sharedApplication].statusBarOrientation;
+//    if (UIInterfaceOrientationIsLandscape(orientation)) {
+//        CGFloat rotation = orientation == UIInterfaceOrientationLandscapeRight ? 0. : M_PI;
+//        _assetWriterVideoInput.transform = CGAffineTransformMakeRotation(rotation);
+//    }
     
     
     NSDictionary *audioOutputSettings = @{
