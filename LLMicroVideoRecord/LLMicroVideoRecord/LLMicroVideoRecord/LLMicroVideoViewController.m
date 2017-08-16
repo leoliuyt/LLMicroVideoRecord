@@ -420,12 +420,6 @@ AVCaptureAudioDataOutputSampleBufferDelegate>
         CGFloat rotation = orientation == UIInterfaceOrientationLandscapeRight ? 0. : M_PI;
         _assetWriterVideoInput.transform = CGAffineTransformMakeRotation(rotation);
     }
-//    UIInterfaceOrientation orientation = [UIApplication sharedApplication].statusBarOrientation;
-//    if (UIInterfaceOrientationIsLandscape(orientation)) {
-//        CGFloat rotation = orientation == UIInterfaceOrientationLandscapeRight ? 0. : M_PI;
-//        _assetWriterVideoInput.transform = CGAffineTransformMakeRotation(rotation);
-//    }
-    
     
     NSDictionary *audioOutputSettings = @{
                                           AVFormatIDKey:@(kAudioFormatMPEG4AAC),
