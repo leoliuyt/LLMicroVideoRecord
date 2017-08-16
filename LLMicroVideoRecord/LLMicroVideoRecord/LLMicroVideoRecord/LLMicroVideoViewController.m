@@ -357,11 +357,27 @@ AVCaptureAudioDataOutputSampleBufferDelegate>
     self.tipLabel.hidden = YES;
 }
 
-
+- (CGSize)renderSize
+{
+    /*
+     绿线bug
+     bug fix: https://stackoverflow.com/questions/22883525/avassetexportsession-giving-me-a-green-border-on-right-and-bottom-of-output-vide#
+     */
+    NSInteger width = [UIScreen mainScreen].bounds.size.width;
+    NSInteger height = [UIScreen mainScreen].bounds.size.height;
+    while (width % 16 > 0) {
+        width += 1.;
+    }
+    
+    while (height % 16 > 0) {
+        height += 1.;
+    }
+    return CGSizeMake(width, height);
+}
 - (void)createWriter:(NSURL *)assetUrl {
     _assetWriter = [AVAssetWriter assetWriterWithURL:assetUrl fileType:AVFileTypeMPEG4 error:nil];
-    int videoWidth = [LLMicroVideoConfig defualtVideoSize].width;
-    int videoHeight = [LLMicroVideoConfig defualtVideoSize].height;
+    CGFloat videoWidth = [self renderSize].width;
+    CGFloat videoHeight = [self renderSize].height;
     
     //    int videoWidth = [UIScreen mainScreen].bounds.size.width;
     //    int videoHeight = [UIScreen mainScreen].bounds.size.height;
