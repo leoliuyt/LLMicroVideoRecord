@@ -41,14 +41,14 @@
 - (void)makeUI
 {
     [self.readyImageView mas_makeConstraints:^(MASConstraintMaker *make) {
-        self.readyWidthConstraint = make.width.equalTo(100.);
-        self.readyHeightConstraint = make.height.equalTo(100.);
+        self.readyWidthConstraint = make.width.equalTo(76.);
+        self.readyHeightConstraint = make.height.equalTo(76.);
         make.center.equalTo(self);
     }];
     
     [self.startImageView mas_makeConstraints:^(MASConstraintMaker *make) {
-        self.startWidthConstraint = make.width.equalTo(100.);
-        self.startHeightConstraint = make.height.equalTo(100.);
+        self.startWidthConstraint = make.width.equalTo(76.);
+        self.startHeightConstraint = make.height.equalTo(76.);
         make.center.equalTo(self);
     }];
     

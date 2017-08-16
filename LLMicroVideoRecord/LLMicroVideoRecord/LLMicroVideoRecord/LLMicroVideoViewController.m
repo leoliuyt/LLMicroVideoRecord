@@ -104,7 +104,7 @@ AVCaptureAudioDataOutputSampleBufferDelegate>
     }];
     
     [self.tipLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.recordBtnView.mas_bottom).offset(10.);
+        make.bottom.equalTo(self.recordBtnView.mas_top);
         make.centerX.equalTo(self.recordBtnView);
     }];
     
@@ -132,12 +132,14 @@ AVCaptureAudioDataOutputSampleBufferDelegate>
         weakSelf.recoding = NO;
                 if (recordTime < 1.) {
                     NSLog(@"录制时间太短");
+                    [weakSelf cleanPath];
                     return ;
                 }
         [weakSelf saveVideo:^(NSURL *outFileURL) {
             dispatch_async(dispatch_get_main_queue(), ^{
                 if (!outFileURL) {
                     NSLog(@"视频录制失败");
+                    [weakSelf cleanPath];
                 }
                 [weakSelf stopRecord];
                 [weakSelf addPlayerView];
@@ -360,6 +362,17 @@ AVCaptureAudioDataOutputSampleBufferDelegate>
 - (void)hideBtn {
     self.backBtn.hidden = YES;
     self.tipLabel.hidden = YES;
+}
+
+- (void)cleanPath
+{
+    if(self.currentRecord.videoAbsolutePath.length > 0) {
+        [[NSFileManager defaultManager] removeItemAtPath:self.currentRecord.videoAbsolutePath error:nil];
+    }
+    
+    if (self.currentRecord.thumAbsolutePath.length > 0) {
+        [[NSFileManager defaultManager] removeItemAtPath:self.currentRecord.thumAbsolutePath error:nil];
+    }
 }
 
 - (CGSize)renderSize
@@ -600,7 +613,7 @@ AVCaptureAudioDataOutputSampleBufferDelegate>
             [weakSelf.playerView removeFromSuperview];
             weakSelf.playerView = nil;
             [weakSelf startRunning];
-            [LLVideoUtil deleteVideo:weakSelf.currentRecord.videoAbsolutePath];
+            [weakSelf cleanPath];
         }];
         _cancelBtn.alpha = 0.;
         [self.view addSubview:_cancelBtn];
