@@ -55,6 +55,10 @@
     UILongPressGestureRecognizer *longpress = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(handleGesture:)];
     longpress.minimumPressDuration = 0.1;
     [self addGestureRecognizer:longpress];
+    
+//    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapGesture:)];
+//    [self addGestureRecognizer:tap];
+//     [tap requireGestureRecognizerToFail:longpress];
 }
 
 - (void)addCircleLayer
@@ -107,6 +111,26 @@
     }
 }
 
+- (void)tapGesture:(UIGestureRecognizer *)gesture
+{
+    switch (gesture.state) {
+        case UIGestureRecognizerStateBegan:
+            NSLog(@"tapGesture-began");
+//            [self startAnimation];
+            break;
+        case UIGestureRecognizerStateEnded:
+            NSLog(@"tapGesture-end");
+//            [self endAnimation];
+            break;
+        case UIGestureRecognizerStateCancelled:
+            NSLog(@"tapGesture-cancel");
+            break;
+            
+        default:
+            break;
+    }
+}
+
 - (void)startAnimation
 {
     self.startWidthConstraint.equalTo(120);
@@ -145,7 +169,7 @@
 - (void)animationDidStart:(CAAnimation *)anim
 {
     self.startTime = CACurrentMediaTime();
-    NSLog(@"leoliu=====didStart time = %f",self.startTime);
+    NSLog(@"leoliu=====didStart time = %f ===%@",self.startTime,[NSThread currentThread]);
     
     if (self.startRecord) {
         self.startRecord();

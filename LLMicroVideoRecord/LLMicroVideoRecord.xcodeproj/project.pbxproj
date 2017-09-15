@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		2A04D0C06EC637D4E71680A4 /* libPods-LLMicroVideoRecord.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48FA2D3768A4BA89AA180A4F /* libPods-LLMicroVideoRecord.a */; };
+		6B65E1741F6B660300D7E195 /* LLPreview.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B65E1731F6B660300D7E195 /* LLPreview.m */; };
+		6B65E1771F6B6B9500D7E195 /* LLCameraController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B65E1761F6B6B9500D7E195 /* LLCameraController.m */; };
+		6B65E17A1F6BB66E00D7E195 /* LLBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B65E1791F6BB66E00D7E195 /* LLBottomView.m */; };
 		6B928E2B1E78DC7400A1D2D2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B928E2A1E78DC7400A1D2D2 /* main.m */; };
 		6B928E2E1E78DC7400A1D2D2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B928E2D1E78DC7400A1D2D2 /* AppDelegate.m */; };
 		6B928E311E78DC7400A1D2D2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B928E301E78DC7400A1D2D2 /* ViewController.m */; };
@@ -27,6 +30,12 @@
 /* Begin PBXFileReference section */
 		474F4C54D9A087F140DD0DDE /* Pods-LLMicroVideoRecord.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLMicroVideoRecord.release.xcconfig"; path = "Pods/Target Support Files/Pods-LLMicroVideoRecord/Pods-LLMicroVideoRecord.release.xcconfig"; sourceTree = "<group>"; };
 		48FA2D3768A4BA89AA180A4F /* libPods-LLMicroVideoRecord.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LLMicroVideoRecord.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B65E1721F6B660300D7E195 /* LLPreview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLPreview.h; sourceTree = "<group>"; };
+		6B65E1731F6B660300D7E195 /* LLPreview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLPreview.m; sourceTree = "<group>"; };
+		6B65E1751F6B6B9500D7E195 /* LLCameraController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLCameraController.h; sourceTree = "<group>"; };
+		6B65E1761F6B6B9500D7E195 /* LLCameraController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLCameraController.m; sourceTree = "<group>"; };
+		6B65E1781F6BB66E00D7E195 /* LLBottomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLBottomView.h; sourceTree = "<group>"; };
+		6B65E1791F6BB66E00D7E195 /* LLBottomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLBottomView.m; sourceTree = "<group>"; };
 		6B928E261E78DC7400A1D2D2 /* LLMicroVideoRecord.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LLMicroVideoRecord.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B928E2A1E78DC7400A1D2D2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6B928E2C1E78DC7400A1D2D2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -143,6 +152,12 @@
 				6B928E521E78DF8200A1D2D2 /* LLPlayerView.m */,
 				6B928E4E1E78DEBE00A1D2D2 /* LLAnimationRecordView.h */,
 				6B928E4F1E78DEBE00A1D2D2 /* LLAnimationRecordView.m */,
+				6B65E1721F6B660300D7E195 /* LLPreview.h */,
+				6B65E1731F6B660300D7E195 /* LLPreview.m */,
+				6B65E1781F6BB66E00D7E195 /* LLBottomView.h */,
+				6B65E1791F6BB66E00D7E195 /* LLBottomView.m */,
+				6B65E1751F6B6B9500D7E195 /* LLCameraController.h */,
+				6B65E1761F6B6B9500D7E195 /* LLCameraController.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -294,11 +309,14 @@
 			files = (
 				6B928E5F1E78E27000A1D2D2 /* UIColor+LL.m in Sources */,
 				6B928E661E78E43000A1D2D2 /* LLMicroVideoViewController.m in Sources */,
+				6B65E1741F6B660300D7E195 /* LLPreview.m in Sources */,
 				6B928E531E78DF8200A1D2D2 /* LLPlayerView.m in Sources */,
 				6B928E311E78DC7400A1D2D2 /* ViewController.m in Sources */,
 				6B928E631E78E39500A1D2D2 /* NSString+LL.m in Sources */,
+				6B65E1771F6B6B9500D7E195 /* LLCameraController.m in Sources */,
 				6B928E2E1E78DC7400A1D2D2 /* AppDelegate.m in Sources */,
 				6B928E501E78DEBE00A1D2D2 /* LLAnimationRecordView.m in Sources */,
+				6B65E17A1F6BB66E00D7E195 /* LLBottomView.m in Sources */,
 				6B928E2B1E78DC7400A1D2D2 /* main.m in Sources */,
 				6B928E561E78E02800A1D2D2 /* LLMicroVideoConfig.m in Sources */,
 			);
