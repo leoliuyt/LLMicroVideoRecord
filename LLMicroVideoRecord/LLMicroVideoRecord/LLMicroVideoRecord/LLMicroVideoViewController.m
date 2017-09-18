@@ -182,6 +182,37 @@
     [self.cameraController stopSession];
 }
 
+//MARK: getter
+- (NSString *)outputVideoPath
+{
+    if (_outputVideoPath.length > 0) {
+        return _outputVideoPath;
+    }
+    
+    //从默认配置中取
+    return nil;
+}
+
+- (NSString *)outputVideoThumPath
+{
+    if (_outputVideoThumPath.length > 0) {
+        return _outputVideoThumPath;
+    }
+    
+    //从默认配置中取
+    return nil;
+}
+
+- (NSString *)outputImagePath
+{
+    if (_outputImagePath.length > 0) {
+        return _outputImagePath;
+    }
+    
+    //从默认配置中取
+    return nil;
+}
+
 //MARK: lazy
 - (LLBottomView *)bottomView
 {
